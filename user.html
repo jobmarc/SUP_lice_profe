@@ -10,24 +10,26 @@
             padding: 0;
             font-family: Arial, sans-serif;
             background: url('img0.jpeg') center/cover no-repeat;
-        }
-        .container {
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            padding: 20px;
         }
-        .content {
-            display: flex;
-            width: 80%;
+        .container {
+            width: 90%;
             max-width: 1100px;
-            background: rgba(255, 255, 255, 0.41);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.3);
             padding: 20px;
             border-radius: 10px;
+            backdrop-filter: blur(5px);
         }
         .left {
             flex: 1;
+            min-width: 300px;
             padding: 20px;
         }
         .left img {
@@ -36,7 +38,8 @@
         }
         .right {
             flex: 1;
-            background: #008c5f;
+            min-width: 300px;
+            background: rgba(0, 140, 95, 0.9);
             padding: 20px;
             border-radius: 10px;
             color: white;
@@ -50,7 +53,7 @@
             margin-bottom: 5px;
         }
         input, select {
-            width: 98%;
+            width: 100%;
             padding: 10px;
             border: none;
             border-radius: 5px;
@@ -63,53 +66,62 @@
             border-radius: 5px;
             font-size: 16px;
             cursor: pointer;
+            width: 100%;
+        }
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                text-align: center;
+            }
+            .right {
+                width: 100%;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="content">
-            <div class="left">
-                <img src="img1.png" alt="Campus Image">
-            </div>
-            <div class="right">
-                <h2>Inscriptions Ouvertes 2025/2026</h2>
-                <form>
-                    <div class="form-group">
-                        <label for="formation">Formation*</label>
-                        <select id="formation">
-                            <option>electro sima</option>
-                            <option>electro bhima</option>
-                            <option>electro chhima</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="prenom">Prénom*</label>
-                        <input type="text" id="prenom">
-                    </div>
-                    <div class="form-group">
-                        <label for="nom">Nom*</label>
-                        <input type="text" id="nom">
-                    </div>
-                    <div class="form-group">
-                        <label for="email">E-mail*</label>
-                        <input type="email" id="email">
-                    </div>
-                    <div class="form-group">
-                        <label for="residence">Votre pays de résidence*</label>
-                        <input type="text" id="residence">
-                    </div>
-                    <div class="form-group">
-                        <label for="ville">Ville*</label>
-                        <input type="text" id="ville">
-                    </div>
-                    <div class="form-group">
-                        <label for="telephone">Numéro de téléphone*</label>
-                        <input type="tel" id="telephone">
-                    </div>
-                    <button class="submit-btn">Envoyer</button>
-                </form>
-            </div>
+        <div class="left">
+            <img src="img1.png" alt="Campus Image">
+        </div>
+        <div class="right">
+            <h2>Inscriptions Ouvertes 2025/2026</h2>
+            <form>
+                <div class="form-group">
+                    <label for="formation">Formation*</label>
+                    <select id="formation">
+                        <option>Veuillez sélectionner</option>
+                      <option>electronique sima</option>
+                      <option>electronique bhima</option>
+                      <option>electronique chhima</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="prenom">Prénom*</label>
+                    <input type="text" id="prenom">
+                </div>
+                <div class="form-group">
+                    <label for="nom">Nom*</label>
+                    <input type="text" id="nom">
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail*</label>
+                    <input type="email" id="email">
+                </div>
+                <div class="form-group">
+                    <label for="residence">Votre pays de résidence*</label>
+                    <input type="text" id="residence">
+                </div>
+                <div class="form-group">
+                    <label for="ville">Ville*</label>
+                    <input type="text" id="ville">
+                </div>
+                <div class="form-group">
+                    <label for="telephone">Numéro de téléphone*</label>
+                    <input type="tel" id="telephone">
+                </div>
+                <button class="submit-btn">Envoyer</button>
+            </form>
         </div>
     </div>
 </body>
